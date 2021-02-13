@@ -24,7 +24,7 @@ start_service() {
 	config_get conffiles "config" "conffiles"
 	config_get datadir "config" "datadir" "/usr/share/xray"
 	config_get format "config" "format" "json"
-	config_get fullcone "enabled" "fullcone" "0"
+	config_get fullcone "enabled" "fullcone" "1"
 
 	procd_open_instance "$CONF"
 	procd_set_param command "$PROG" run
