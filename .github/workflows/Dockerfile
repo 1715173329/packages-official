@@ -3,4 +3,4 @@ FROM openwrt/rootfs:$ARCH
 
 ADD entrypoint.sh /entrypoint.sh
 
-CMD ["/entrypoint.sh"]
+CMD ["cd /ci && /entrypoint.sh"]
